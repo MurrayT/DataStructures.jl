@@ -38,10 +38,10 @@ a[x]             # get the current value/count for x.
 
 push!(a, x)      # add the value/count for x by 1
 push!(a, x, v)   # add the value/count for x by v
-push!(a, a2)     # add all counts from a2 to a1
 
 pop!(a, x)       # remove a key x from a, and returns its current value
 
+merge!(a, a2)     # add all counts from a2 to a
 merge(a, a2)     # return a new accumulator/counter that combines the
                  # values/counts in both a and a2
 ```
